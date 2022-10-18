@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TrackerHighVolumeGetRewards.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TourGuide</a> &gt; <a href="index.source.html" class="el_package">tourGuide.helper</a> &gt; <span class="el_source">TrackerHighVolumeGetRewards.java</span></div><h1>TrackerHighVolumeGetRewards.java</h1><pre class="source lang-java linenums">package tourGuide.helper;
+
+import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+import gpsUtil.GpsUtil;
+import gpsUtil.location.Attraction;
+import gpsUtil.location.VisitedLocation;
+import lombok.Data;
+import org.apache.commons.lang3.time.StopWatch;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import tourGuide.service.RewardsService;
+import tourGuide.service.TourGuideService;
+import tourGuide.tracker.Tracker;
+import tourGuide.user.User;
+
+<span class="nc bnc" id="L21" title="All 42 branches missed.">@Data</span>
+public class TrackerHighVolumeGetRewards extends Thread {
+<span class="pc" id="L23">    private final Logger logger = LoggerFactory.getLogger(Tracker.class);</span>
+<span class="fc" id="L24">    private static final long trackingPollingInterval = TimeUnit.MINUTES.toSeconds(5);</span>
+    //private final ExecutorService executorService = Executors.newSingleThreadExecutor();
+<span class="nc" id="L26">    private final RewardsService rewardsService;</span>
+<span class="pc" id="L27">    private boolean stop = false;</span>
+<span class="fc" id="L28">    private List&lt;User&gt; userTreatement = new ArrayList&lt;&gt;();</span>
+<span class="pc" id="L29">    GpsUtil gpsUtil = new GpsUtil();</span>
+
+
+    public void setUserTreatement(List&lt;User&gt; sublistUserTreatement) {
+<span class="fc" id="L33">        this.userTreatement.addAll(new ArrayList&lt;User&gt;(sublistUserTreatement));</span>
+<span class="fc" id="L34">    }</span>
+
+<span class="fc" id="L36">    public TrackerHighVolumeGetRewards(RewardsService rewardsService) {</span>
+<span class="fc" id="L37">        this.rewardsService = rewardsService;</span>
+        //executorService.submit(this);
+<span class="fc" id="L39">    }</span>
+
+    /**
+     * Assures to shut down the Tracker thread
+     */
+    public void stopTracking() {
+<span class="nc" id="L45">        logger.debug(&quot;Tracker stopping (0)&quot;);</span>
+<span class="nc" id="L46">        stop = true;</span>
+        //executorService.shutdownNow();
+<span class="nc" id="L48">    }</span>
+
+    @Override
+    public void run() {
+<span class="fc" id="L52">        StopWatch stopWatch = new StopWatch();</span>
+<span class="fc" id="L53">        logger.info(&quot;Nombre de User dans la liste = &quot; +userTreatement.size());</span>
+        while(true) {
+<span class="pc bpc" id="L55" title="2 of 4 branches missed.">            if (Thread.currentThread().isInterrupted() || stop) {</span>
+<span class="nc" id="L56">                logger.debug(&quot;Tracker stopping (1)&quot;);</span>
+<span class="nc" id="L57">                break;</span>
+            }
+
+
+<span class="fc" id="L61">            logger.debug(&quot;Begin Tracker. Tracking &quot; + userTreatement.size() + &quot; users.&quot;);</span>
+<span class="fc" id="L62">            Attraction attraction = gpsUtil.getAttractions().get(0);</span>
+<span class="fc" id="L63">            userTreatement.forEach(u -&gt; u.addToVisitedLocations(new VisitedLocation(u.getUserId(), attraction, new Date())));</span>
+<span class="fc" id="L64">            stopWatch.start();</span>
+<span class="fc" id="L65">            userTreatement.forEach(u -&gt; rewardsService.calculateRewards(u));</span>
+<span class="fc" id="L66">            stopWatch.stop();</span>
+
+<span class="fc" id="L68">            logger.debug(&quot;Tracker Time Elapsed: &quot; + TimeUnit.MILLISECONDS.toSeconds(stopWatch.getTime()) + &quot; seconds.&quot;);</span>
+<span class="fc" id="L69">            stopWatch.reset();</span>
+<span class="fc" id="L70">            break;</span>
+        }
+<span class="fc" id="L72">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tourGuide.TestPerformance" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-10-18T16:44:07" hostname="DESKTOP-LLPVODE" time="3.856">
+  <properties/>
+  <testcase name="highVolumeTrackLocation" classname="tourGuide.TestPerformance" time="2.099"/>
+  <testcase name="highVolumeGetRewards" classname="tourGuide.TestPerformance" time="1.757"/>
+  <system-out><![CDATA[18:44:07.456 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+18:44:07.471 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+18:44:07.678 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 100 internal test users.
+18:44:07.681 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+Début boucle new
+18:44:07.698 [Test worker] INFO tourGuide.tracker.Tracker - Nombre de thread = 100
+18:44:07.705 [Test worker] INFO tourGuide.tracker.Tracker - Début boucle start
+Modulo : 0
+18:44:07.716 [pool-1-thread-1] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 0
+18:44:07.717 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+18:44:07.722 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:07.722 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+Nombre de passage après modulo : 0
+18:44:07.739 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 1
+Nombre de passage après modulo : 1
+18:44:07.751 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 2
+Nombre de passage après modulo : 2
+18:44:07.752 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 3
+Nombre de passage après modulo : 3
+18:44:07.754 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 4
+Nombre de passage après modulo : 4
+18:44:07.758 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 5
+Nombre de passage après modulo : 5
+18:44:07.763 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 6
+Nombre de passage après modulo : 6
+18:44:07.764 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 7
+Nombre de passage après modulo : 7
+18:44:07.767 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 8
+Nombre de passage après modulo : 8
+18:44:07.769 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 9
+Nombre de passage après modulo : 9
+18:44:07.771 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 10
+Nombre de passage après modulo : 10
+18:44:07.771 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 11
+Nombre de passage après modulo : 11
+18:44:07.773 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 12
+Nombre de passage après modulo : 12
+18:44:07.774 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 13
+Nombre de passage après modulo : 13
+18:44:07.775 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 14
+Nombre de passage après modulo : 14
+18:44:07.775 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 15
+Nombre de passage après modulo : 15
+18:44:07.777 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 16
+18:44:07.777 [Thibault-0] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+Nombre de passage après modulo : 16
+18:44:07.778 [Thibault-0] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:07.778 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 17
+Nombre de passage après modulo : 17
+18:44:07.780 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 18
+Nombre de passage après modulo : 18
+18:44:07.978 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 19
+Nombre de passage après modulo : 19
+18:44:07.981 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 20
+Nombre de passage après modulo : 20
+18:44:07.987 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 21
+Nombre de passage après modulo : 21
+18:44:07.999 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 22
+Nombre de passage après modulo : 22
+18:44:08.001 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 23
+Nombre de passage après modulo : 23
+18:44:08.005 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 24
+Nombre de passage après modulo : 24
+18:44:08.008 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 25
+Nombre de passage après modulo : 25
+18:44:08.009 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 26
+Nombre de passage après modulo : 26
+18:44:08.011 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 27
+Nombre de passage après modulo : 27
+18:44:08.013 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 28
+Nombre de passage après modulo : 28
+18:44:08.014 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 29
+Nombre de passage après modulo : 29
+18:44:08.016 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 30
+Nombre de passage après modulo : 30
+18:44:08.019 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 31
+Nombre de passage après modulo : 31
+18:44:08.021 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 32
+Nombre de passage après modulo : 32
+18:44:08.023 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 33
+Nombre de passage après modulo : 33
+18:44:08.027 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 34
+Nombre de passage après modulo : 34
+18:44:08.028 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 35
+Nombre de passage après modulo : 35
+18:44:08.032 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 36
+Nombre de passage après modulo : 36
+18:44:08.033 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 37
+Nombre de passage après modulo : 37
+18:44:08.034 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 38
+Nombre de passage après modulo : 38
+18:44:08.035 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 39
+Nombre de passage après modulo : 39
+18:44:08.036 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 40
+Nombre de passage après modulo : 40
+18:44:08.037 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 41
+Nombre de passage après modulo : 41
+18:44:08.037 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 42
+Nombre de passage après modulo : 42
+18:44:08.038 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 43
+Nombre de passage après modulo : 43
+18:44:08.038 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 44
+Nombre de passage après modulo : 44
+18:44:08.038 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 45
+Nombre de passage après modulo : 45
+18:44:08.046 [Thibault-1] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.046 [Thibault-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.047 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 46
+18:44:08.048 [Thibault-2] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+Nombre de passage après modulo : 46
+18:44:08.049 [Thibault-2] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.049 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 47
+Nombre de passage après modulo : 47
+18:44:08.050 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 48
+Nombre de passage après modulo : 48
+18:44:08.051 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 49
+Nombre de passage après modulo : 49
+18:44:08.051 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 50
+Nombre de passage après modulo : 50
+18:44:08.052 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 51
+Nombre de passage après modulo : 51
+18:44:08.052 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 52
+Nombre de passage après modulo : 52
+18:44:08.053 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 53
+Nombre de passage après modulo : 53
+18:44:08.053 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 54
+Nombre de passage après modulo : 54
+18:44:08.054 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 55
+Nombre de passage après modulo : 55
+18:44:08.055 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 56
+Nombre de passage après modulo : 56
+18:44:08.056 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 57
+Nombre de passage après modulo : 57
+18:44:08.056 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 58
+Nombre de passage après modulo : 58
+18:44:08.057 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 59
+Nombre de passage après modulo : 59
+18:44:08.057 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 60
+Nombre de passage après modulo : 60
+18:44:08.058 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 61
+Nombre de passage après modulo : 61
+18:44:08.058 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 62
+Nombre de passage après modulo : 62
+18:44:08.059 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 63
+Nombre de passage après modulo : 63
+18:44:08.059 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 64
+Nombre de passage après modulo : 64
+18:44:08.059 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 65
+Nombre de passage après modulo : 65
+18:44:08.060 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 66
+Nombre de passage après modulo : 66
+18:44:08.061 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 67
+Nombre de passage après modulo : 67
+18:44:08.061 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 68
+Nombre de passage après modulo : 68
+18:44:08.061 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 69
+Nombre de passage après modulo : 69
+18:44:08.062 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 70
+Nombre de passage après modulo : 70
+18:44:08.062 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 71
+Nombre de passage après modulo : 71
+18:44:08.063 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 72
+Nombre de passage après modulo : 72
+18:44:08.064 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 73
+Nombre de passage après modulo : 73
+18:44:08.064 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 74
+Nombre de passage après modulo : 74
+18:44:08.064 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 75
+Nombre de passage après modulo : 75
+18:44:08.065 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 76
+Nombre de passage après modulo : 76
+18:44:08.065 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 77
+Nombre de passage après modulo : 77
+18:44:08.066 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 78
+Nombre de passage après modulo : 78
+18:44:08.067 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 79
+Nombre de passage après modulo : 79
+18:44:08.067 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 80
+Nombre de passage après modulo : 80
+18:44:08.068 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 81
+Nombre de passage après modulo : 81
+18:44:08.068 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 82
+Nombre de passage après modulo : 82
+18:44:08.068 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 83
+Nombre de passage après modulo : 83
+18:44:08.069 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 84
+Nombre de passage après modulo : 84
+18:44:08.069 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 85
+Nombre de passage après modulo : 85
+18:44:08.070 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 86
+Nombre de passage après modulo : 86
+18:44:08.070 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 87
+Nombre de passage après modulo : 87
+18:44:08.071 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 88
+Nombre de passage après modulo : 88
+18:44:08.071 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 89
+Nombre de passage après modulo : 89
+18:44:08.072 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 90
+Nombre de passage après modulo : 90
+18:44:08.072 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 91
+Nombre de passage après modulo : 91
+18:44:08.072 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 92
+Nombre de passage après modulo : 92
+18:44:08.073 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 93
+Nombre de passage après modulo : 93
+18:44:08.074 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 94
+Nombre de passage après modulo : 94
+18:44:08.075 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 95
+Nombre de passage après modulo : 95
+18:44:08.075 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 96
+Nombre de passage après modulo : 96
+18:44:08.076 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 97
+Nombre de passage après modulo : 97
+18:44:08.076 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 98
+Nombre de passage après modulo : 98
+18:44:08.076 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 99
+Nombre de passage après modulo : 99
+18:44:08.077 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 100
+18:44:08.077 [Test worker] INFO tourGuide.tracker.Tracker - Début boucle join
+18:44:08.077 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 0
+18:44:08.086 [Thibault-3] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.086 [Thibault-3] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.088 [Thibault-4] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.089 [Thibault-4] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.089 [Thibault-5] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.090 [Thibault-6] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.090 [Thibault-6] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.090 [Thibault-5] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.096 [Thibault-7] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.103 [Thibault-7] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.107 [Thibault-8] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.108 [Thibault-8] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.110 [Thibault-9] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.111 [Thibault-9] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.112 [Thibault-10] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.113 [Thibault-10] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.113 [Thibault-11] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.114 [Thibault-11] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.117 [Thibault-12] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.117 [Thibault-12] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.118 [Thibault-13] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.119 [Thibault-13] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.118 [Thibault-14] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.119 [Thibault-14] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.121 [Thibault-15] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.122 [Thibault-15] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.121 [Thibault-16] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.122 [Thibault-16] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.123 [Thibault-17] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.123 [Thibault-17] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.124 [Thibault-18] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.125 [Thibault-18] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.127 [Thibault-19] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.128 [Thibault-19] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.128 [Thibault-20] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.128 [Thibault-20] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.128 [Thibault-21] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.129 [Thibault-21] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.130 [Thibault-22] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.130 [Thibault-22] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.132 [Thibault-23] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.132 [Thibault-23] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.133 [Thibault-24] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.134 [Thibault-24] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.135 [Thibault-25] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.135 [Thibault-25] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.137 [Thibault-26] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.137 [Thibault-26] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.138 [Thibault-27] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.139 [Thibault-27] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.140 [Thibault-28] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.141 [Thibault-28] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.214 [Thibault-29] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.215 [Thibault-29] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.273 [Thibault-5] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.274 [Thibault-16] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.278 [Thibault-8] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.279 [Thibault-2] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.280 [Thibault-9] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.282 [Thibault-6] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.284 [Thibault-0] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.285 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 1
+18:44:08.287 [Thibault-12] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.289 [Thibault-14] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.300 [Thibault-15] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.307 [Thibault-20] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.309 [Thibault-18] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.333 [Thibault-23] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.347 [Thibault-10] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.348 [Thibault-4] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.350 [Thibault-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.351 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 2
+18:44:08.351 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 3
+18:44:08.354 [Thibault-13] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.357 [Thibault-7] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.357 [Thibault-17] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.359 [Thibault-22] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.361 [Thibault-26] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.361 [Thibault-11] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.363 [Thibault-24] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.378 [Thibault-3] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.379 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 4
+18:44:08.379 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 5
+18:44:08.380 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 6
+18:44:08.380 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 7
+18:44:08.380 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 8
+18:44:08.380 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 9
+18:44:08.380 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 10
+18:44:08.380 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 11
+18:44:08.380 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 12
+18:44:08.380 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 13
+18:44:08.380 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 14
+18:44:08.380 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 15
+18:44:08.380 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 16
+18:44:08.381 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 17
+18:44:08.381 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 18
+18:44:08.381 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 19
+18:44:08.434 [Thibault-30] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.435 [Thibault-30] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.437 [Thibault-27] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.443 [Thibault-19] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.444 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 20
+18:44:08.445 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 21
+18:44:08.450 [Thibault-21] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.451 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 22
+18:44:08.451 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 23
+18:44:08.451 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 24
+18:44:08.451 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 25
+18:44:08.455 [Thibault-28] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.456 [Thibault-25] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.457 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 26
+18:44:08.457 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 27
+18:44:08.458 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 28
+18:44:08.458 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 29
+18:44:08.461 [Thibault-29] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.462 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 30
+18:44:08.805 [Thibault-99] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.805 [Thibault-99] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.806 [Thibault-98] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.807 [Thibault-98] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.809 [Thibault-97] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.809 [Thibault-97] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.810 [Thibault-96] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.810 [Thibault-96] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.813 [Thibault-95] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.813 [Thibault-95] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.814 [Thibault-94] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.820 [Thibault-94] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.820 [Thibault-93] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.821 [Thibault-93] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.824 [Thibault-92] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.825 [Thibault-92] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.826 [Thibault-91] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.826 [Thibault-91] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.827 [Thibault-90] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.828 [Thibault-90] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.828 [Thibault-89] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.828 [Thibault-89] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.830 [Thibault-87] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.830 [Thibault-87] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.830 [Thibault-88] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.831 [Thibault-88] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.831 [Thibault-86] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.831 [Thibault-86] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.832 [Thibault-85] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.833 [Thibault-85] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.833 [Thibault-84] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.833 [Thibault-84] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.833 [Thibault-83] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.833 [Thibault-83] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.834 [Thibault-82] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.834 [Thibault-82] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.835 [Thibault-81] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.835 [Thibault-81] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.836 [Thibault-80] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.836 [Thibault-80] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.836 [Thibault-79] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.836 [Thibault-79] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.837 [Thibault-78] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.847 [Thibault-78] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.849 [Thibault-75] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.839 [Thibault-77] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.855 [Thibault-77] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.855 [Thibault-74] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.856 [Thibault-74] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.845 [Thibault-76] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.859 [Thibault-76] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.859 [Thibault-73] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.859 [Thibault-73] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.855 [Thibault-75] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.860 [Thibault-72] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.860 [Thibault-72] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.861 [Thibault-71] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.861 [Thibault-71] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.862 [Thibault-70] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.862 [Thibault-70] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.863 [Thibault-69] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.863 [Thibault-69] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.863 [Thibault-68] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.863 [Thibault-68] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.864 [Thibault-67] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.865 [Thibault-67] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.865 [Thibault-66] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.865 [Thibault-66] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.866 [Thibault-65] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.866 [Thibault-65] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.866 [Thibault-64] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.866 [Thibault-64] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.867 [Thibault-63] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.867 [Thibault-63] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.867 [Thibault-62] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.868 [Thibault-62] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.868 [Thibault-61] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.869 [Thibault-61] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.869 [Thibault-60] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.869 [Thibault-60] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.869 [Thibault-59] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.871 [Thibault-59] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.871 [Thibault-58] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.872 [Thibault-58] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.874 [Thibault-57] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.874 [Thibault-57] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.875 [Thibault-56] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.875 [Thibault-56] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.876 [Thibault-55] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.876 [Thibault-55] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.876 [Thibault-54] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.877 [Thibault-54] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.878 [Thibault-53] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.878 [Thibault-53] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.878 [Thibault-52] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.878 [Thibault-52] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.879 [Thibault-51] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.880 [Thibault-51] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.880 [Thibault-50] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.880 [Thibault-50] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.881 [Thibault-49] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.881 [Thibault-49] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.882 [Thibault-48] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.882 [Thibault-48] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.883 [Thibault-47] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.883 [Thibault-47] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.884 [Thibault-46] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.884 [Thibault-45] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.884 [Thibault-45] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.884 [Thibault-44] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.884 [Thibault-44] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.884 [Thibault-43] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.884 [Thibault-43] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.884 [Thibault-46] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.884 [Thibault-42] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.884 [Thibault-42] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.885 [Thibault-41] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.885 [Thibault-40] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.885 [Thibault-40] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.885 [Thibault-39] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.885 [Thibault-39] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.885 [Thibault-41] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.885 [Thibault-38] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.885 [Thibault-38] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.885 [Thibault-37] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.886 [Thibault-37] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.886 [Thibault-36] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.886 [Thibault-36] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.886 [Thibault-35] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.886 [Thibault-35] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.886 [Thibault-34] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.887 [Thibault-34] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.887 [Thibault-32] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.887 [Thibault-32] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.887 [Thibault-33] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.887 [Thibault-33] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.888 [Thibault-31] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:08.888 [Thibault-31] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:08.898 [Thibault-30] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.899 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 31
+18:44:08.978 [Thibault-98] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:08.979 [Thibault-99] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.127 [Thibault-96] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.143 [Thibault-86] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.147 [Thibault-94] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.148 [Thibault-90] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.151 [Thibault-91] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.169 [Thibault-97] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.171 [Thibault-87] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.179 [Thibault-83] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.188 [Thibault-80] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.216 [Thibault-82] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.307 [Thibault-78] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.310 [Thibault-76] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.312 [Thibault-93] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.316 [Thibault-84] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.318 [Thibault-71] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.323 [Thibault-74] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.327 [Thibault-88] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.328 [Thibault-60] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.344 [Thibault-95] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.346 [Thibault-52] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.348 [Thibault-61] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.351 [Thibault-73] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.355 [Thibault-58] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.357 [Thibault-57] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.358 [Thibault-79] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.359 [Thibault-92] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.362 [Thibault-89] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.364 [Thibault-59] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.366 [Thibault-85] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.370 [Thibault-70] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.373 [Thibault-77] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.379 [Thibault-81] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.379 [Thibault-53] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.381 [Thibault-42] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.382 [Thibault-67] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.383 [Thibault-72] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.384 [Thibault-51] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.384 [Thibault-47] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.386 [Thibault-45] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.387 [Thibault-68] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.388 [Thibault-33] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.388 [Thibault-31] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.390 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 32
+18:44:09.405 [Thibault-64] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.407 [Thibault-69] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.408 [Thibault-49] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.410 [Thibault-43] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.412 [Thibault-63] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.414 [Thibault-75] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.416 [Thibault-36] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.418 [Thibault-65] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.420 [Thibault-50] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.422 [Thibault-35] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.424 [Thibault-38] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.425 [Thibault-54] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.427 [Thibault-62] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.429 [Thibault-66] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.430 [Thibault-37] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.433 [Thibault-46] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.435 [Thibault-48] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.437 [Thibault-32] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.438 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 33
+18:44:09.439 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 34
+18:44:09.441 [Thibault-41] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.443 [Thibault-40] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.443 [Thibault-55] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.444 [Thibault-34] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.444 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 35
+18:44:09.444 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 36
+18:44:09.444 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 37
+18:44:09.444 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 38
+18:44:09.444 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 39
+18:44:09.447 [Thibault-39] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.448 [Thibault-56] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.448 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 40
+18:44:09.449 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 41
+18:44:09.449 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 42
+18:44:09.449 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 43
+18:44:09.449 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 44
+18:44:09.450 [Thibault-44] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 45
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 46
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 47
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 48
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 49
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 50
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 51
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 52
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 53
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 54
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 55
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 56
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 57
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 58
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 59
+18:44:09.450 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 60
+18:44:09.451 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 61
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 62
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 63
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 64
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 65
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 66
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 67
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 68
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 69
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 70
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 71
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 72
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 73
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 74
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 75
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 76
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 77
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 78
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 79
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 80
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 81
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 82
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 83
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 84
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 85
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 86
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 87
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 88
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 89
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 90
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 91
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 92
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 93
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 94
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 95
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 96
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 97
+18:44:09.452 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 98
+18:44:09.454 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 99
+18:44:09.457 [Test worker] INFO tourGuide.tracker.Tracker - Fin boucle
+18:44:09.457 [Test worker] DEBUG tourGuide.tracker.Tracker - Tracker stopping (0)
+18:44:09.457 [Test worker] INFO tourGuide.tracker.Tracker - Nombre de UserTreatement passé à la moulinette 100
+18:44:09.457 [Test worker] INFO tourGuide.tracker.Tracker - highVolumeTrackLocation: Time Elapsed: 1 seconds.
+18:44:09.459 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+18:44:09.459 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+18:44:09.474 [pool-1-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker stopping (2)
+18:44:09.551 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 100 internal test users.
+18:44:09.552 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+Début boucle new
+18:44:09.750 [pool-2-thread-1] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 0
+18:44:09.752 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+18:44:09.752 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:09.752 [pool-2-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+18:44:09.775 [Test worker] INFO tourGuide.tracker.Tracker - Nombre de thread = 100
+Modulo : 0
+Nombre de passage après modulo : 0
+18:44:09.776 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 1
+Nombre de passage après modulo : 1
+18:44:09.777 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 2
+Nombre de passage après modulo : 2
+18:44:09.777 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 3
+Nombre de passage après modulo : 3
+18:44:09.777 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 4
+Nombre de passage après modulo : 4
+18:44:09.777 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 5
+Nombre de passage après modulo : 5
+18:44:09.777 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 6
+Nombre de passage après modulo : 6
+18:44:09.778 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 7
+Nombre de passage après modulo : 7
+18:44:09.778 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 8
+Nombre de passage après modulo : 8
+18:44:09.778 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 9
+Nombre de passage après modulo : 9
+18:44:09.779 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 10
+Nombre de passage après modulo : 10
+18:44:09.780 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 11
+Nombre de passage après modulo : 11
+18:44:09.780 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 12
+Nombre de passage après modulo : 12
+18:44:09.781 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 13
+Nombre de passage après modulo : 13
+18:44:09.781 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 14
+Nombre de passage après modulo : 14
+18:44:09.781 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 15
+Nombre de passage après modulo : 15
+18:44:09.781 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 16
+Nombre de passage après modulo : 16
+18:44:09.781 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 17
+Nombre de passage après modulo : 17
+18:44:09.782 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 18
+Nombre de passage après modulo : 18
+18:44:09.782 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 19
+Nombre de passage après modulo : 19
+18:44:09.782 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 20
+Nombre de passage après modulo : 20
+18:44:09.783 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 21
+Nombre de passage après modulo : 21
+18:44:09.783 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 22
+Nombre de passage après modulo : 22
+18:44:09.785 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 23
+Nombre de passage après modulo : 23
+18:44:09.843 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 24
+Nombre de passage après modulo : 24
+18:44:09.843 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 25
+Nombre de passage après modulo : 25
+18:44:09.845 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 26
+Nombre de passage après modulo : 26
+18:44:09.845 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 27
+Nombre de passage après modulo : 27
+18:44:09.845 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 28
+Nombre de passage après modulo : 28
+18:44:09.845 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 29
+Nombre de passage après modulo : 29
+18:44:09.846 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 30
+Nombre de passage après modulo : 30
+18:44:09.846 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 31
+Nombre de passage après modulo : 31
+18:44:09.846 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 32
+Nombre de passage après modulo : 32
+18:44:09.863 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 33
+Nombre de passage après modulo : 33
+18:44:09.863 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 34
+Nombre de passage après modulo : 34
+18:44:09.863 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 35
+Nombre de passage après modulo : 35
+18:44:09.863 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 36
+Nombre de passage après modulo : 36
+18:44:09.863 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 37
+Nombre de passage après modulo : 37
+18:44:09.863 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 38
+Nombre de passage après modulo : 38
+18:44:09.863 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 39
+Nombre de passage après modulo : 39
+18:44:09.864 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 40
+Nombre de passage après modulo : 40
+18:44:09.864 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 41
+Nombre de passage après modulo : 41
+18:44:09.864 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 42
+Nombre de passage après modulo : 42
+18:44:09.864 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 43
+Nombre de passage après modulo : 43
+18:44:09.864 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 44
+Nombre de passage après modulo : 44
+18:44:09.864 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 45
+Nombre de passage après modulo : 45
+18:44:09.864 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 46
+Nombre de passage après modulo : 46
+18:44:09.865 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 47
+Nombre de passage après modulo : 47
+18:44:09.865 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 48
+Nombre de passage après modulo : 48
+18:44:09.865 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 49
+Nombre de passage après modulo : 49
+18:44:09.865 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 50
+Nombre de passage après modulo : 50
+18:44:09.865 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 51
+Nombre de passage après modulo : 51
+18:44:09.866 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 52
+Nombre de passage après modulo : 52
+18:44:09.866 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 53
+Nombre de passage après modulo : 53
+18:44:09.866 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 54
+Nombre de passage après modulo : 54
+18:44:09.867 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 55
+Nombre de passage après modulo : 55
+18:44:09.867 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 56
+Nombre de passage après modulo : 56
+18:44:09.867 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 57
+Nombre de passage après modulo : 57
+18:44:09.867 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 58
+Nombre de passage après modulo : 58
+18:44:09.867 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 59
+Nombre de passage après modulo : 59
+18:44:09.867 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 60
+Nombre de passage après modulo : 60
+18:44:09.867 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 61
+Nombre de passage après modulo : 61
+18:44:09.868 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 62
+Nombre de passage après modulo : 62
+18:44:09.868 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 63
+Nombre de passage après modulo : 63
+18:44:09.868 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 64
+Nombre de passage après modulo : 64
+18:44:09.868 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 65
+Nombre de passage après modulo : 65
+18:44:09.868 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 66
+Nombre de passage après modulo : 66
+18:44:09.868 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 67
+Nombre de passage après modulo : 67
+18:44:09.868 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 68
+Nombre de passage après modulo : 68
+18:44:09.869 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 69
+Nombre de passage après modulo : 69
+18:44:09.871 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 70
+Nombre de passage après modulo : 70
+18:44:09.871 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 71
+Nombre de passage après modulo : 71
+18:44:09.871 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 72
+Nombre de passage après modulo : 72
+18:44:09.871 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 73
+Nombre de passage après modulo : 73
+18:44:09.871 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 74
+Nombre de passage après modulo : 74
+18:44:09.871 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 75
+Nombre de passage après modulo : 75
+18:44:09.872 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 76
+Nombre de passage après modulo : 76
+18:44:09.872 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 77
+Nombre de passage après modulo : 77
+18:44:09.872 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 78
+Nombre de passage après modulo : 78
+18:44:09.872 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 79
+Nombre de passage après modulo : 79
+18:44:09.872 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 80
+Nombre de passage après modulo : 80
+18:44:09.872 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 81
+Nombre de passage après modulo : 81
+18:44:09.872 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 82
+Nombre de passage après modulo : 82
+18:44:09.873 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 83
+Nombre de passage après modulo : 83
+18:44:09.873 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 84
+Nombre de passage après modulo : 84
+18:44:09.873 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 85
+Nombre de passage après modulo : 85
+18:44:09.873 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 86
+Nombre de passage après modulo : 86
+18:44:09.875 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 87
+Nombre de passage après modulo : 87
+18:44:09.883 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 88
+Nombre de passage après modulo : 88
+18:44:09.887 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 89
+Nombre de passage après modulo : 89
+18:44:09.900 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 90
+Nombre de passage après modulo : 90
+18:44:09.903 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 91
+Nombre de passage après modulo : 91
+18:44:09.903 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 92
+Nombre de passage après modulo : 92
+18:44:09.903 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 93
+Nombre de passage après modulo : 93
+18:44:09.903 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 94
+Nombre de passage après modulo : 94
+18:44:09.903 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 95
+Nombre de passage après modulo : 95
+18:44:09.904 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 96
+Nombre de passage après modulo : 96
+18:44:09.904 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 97
+Nombre de passage après modulo : 97
+18:44:09.904 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 98
+Nombre de passage après modulo : 98
+18:44:09.904 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 99
+Nombre de passage après modulo : 99
+18:44:09.904 [Test worker] INFO tourGuide.tracker.Tracker - Prénom User : 100
+18:44:09.904 [Test worker] INFO tourGuide.tracker.Tracker - Début boucle join
+18:44:09.904 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 0
+18:44:10.019 [Thibault-0] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.021 [Thibault-0] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.033 [Thibault-1] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.034 [Thibault-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.035 [Thibault-2] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.036 [Thibault-2] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.040 [Thibault-3] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.040 [Thibault-3] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.043 [Thibault-4] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.043 [Thibault-4] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.045 [Thibault-5] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.045 [Thibault-5] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.052 [Thibault-6] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.052 [Thibault-6] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.116 [Thibault-7] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.116 [Thibault-7] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.116 [Thibault-98] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.116 [Thibault-99] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.117 [Thibault-99] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.117 [Thibault-97] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.117 [Thibault-97] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.117 [Thibault-95] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.117 [Thibault-95] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.117 [Thibault-98] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.118 [Thibault-94] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.118 [Thibault-94] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.117 [Thibault-96] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.118 [Thibault-96] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.118 [Thibault-93] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.118 [Thibault-93] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.119 [Thibault-92] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.119 [Thibault-92] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.119 [Thibault-91] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.119 [Thibault-91] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.120 [Thibault-89] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.120 [Thibault-89] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.119 [Thibault-90] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.120 [Thibault-90] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.120 [Thibault-88] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.120 [Thibault-88] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.120 [Thibault-87] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.120 [Thibault-87] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.121 [Thibault-85] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.121 [Thibault-85] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.121 [Thibault-83] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.121 [Thibault-83] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.121 [Thibault-86] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.121 [Thibault-86] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.121 [Thibault-82] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.121 [Thibault-82] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.121 [Thibault-84] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.121 [Thibault-84] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.121 [Thibault-81] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.122 [Thibault-81] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.122 [Thibault-80] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.122 [Thibault-80] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.122 [Thibault-79] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.122 [Thibault-79] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.123 [Thibault-78] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.123 [Thibault-78] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.123 [Thibault-77] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.123 [Thibault-77] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.124 [Thibault-76] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.124 [Thibault-76] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.124 [Thibault-75] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.124 [Thibault-75] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.125 [Thibault-74] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.126 [Thibault-74] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.126 [Thibault-73] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.127 [Thibault-73] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.128 [Thibault-72] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.128 [Thibault-72] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.128 [Thibault-71] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.128 [Thibault-71] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.129 [Thibault-70] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.129 [Thibault-70] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.129 [Thibault-69] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.129 [Thibault-69] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.130 [Thibault-68] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.130 [Thibault-68] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.130 [Thibault-67] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.130 [Thibault-67] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.131 [Thibault-66] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.131 [Thibault-66] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.141 [Thibault-65] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.141 [Thibault-65] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.142 [Thibault-64] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.142 [Thibault-64] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.142 [Thibault-63] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.142 [Thibault-63] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.142 [Thibault-62] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.142 [Thibault-62] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.142 [Thibault-61] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.142 [Thibault-61] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.142 [Thibault-60] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.143 [Thibault-60] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.143 [Thibault-59] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.143 [Thibault-59] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.143 [Thibault-58] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.143 [Thibault-58] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.143 [Thibault-57] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.143 [Thibault-57] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.143 [Thibault-56] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.143 [Thibault-56] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.143 [Thibault-55] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.143 [Thibault-55] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.144 [Thibault-54] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.144 [Thibault-54] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.144 [Thibault-53] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.144 [Thibault-53] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.144 [Thibault-52] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.144 [Thibault-52] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.144 [Thibault-51] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.144 [Thibault-51] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.145 [Thibault-49] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.145 [Thibault-49] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.144 [Thibault-50] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.145 [Thibault-50] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.145 [Thibault-47] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.145 [Thibault-47] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.145 [Thibault-48] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.145 [Thibault-48] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.145 [Thibault-46] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.145 [Thibault-46] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.145 [Thibault-45] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.145 [Thibault-45] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.146 [Thibault-44] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.146 [Thibault-44] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.146 [Thibault-43] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.146 [Thibault-43] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.146 [Thibault-42] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.146 [Thibault-42] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.147 [Thibault-41] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.147 [Thibault-41] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.152 [Thibault-40] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.152 [Thibault-40] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.153 [Thibault-39] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.153 [Thibault-39] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.153 [Thibault-38] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.153 [Thibault-38] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.155 [Thibault-37] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.157 [Thibault-37] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.157 [Thibault-36] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.157 [Thibault-36] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.157 [Thibault-35] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.157 [Thibault-35] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.157 [Thibault-34] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.157 [Thibault-34] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.157 [Thibault-33] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.157 [Thibault-33] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.158 [Thibault-32] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.158 [Thibault-32] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.158 [Thibault-29] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.158 [Thibault-29] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.158 [Thibault-28] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.158 [Thibault-28] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.158 [Thibault-27] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.158 [Thibault-27] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.158 [Thibault-31] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.158 [Thibault-31] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.159 [Thibault-26] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.159 [Thibault-26] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.158 [Thibault-30] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.159 [Thibault-30] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.159 [Thibault-25] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.159 [Thibault-25] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.159 [Thibault-23] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.159 [Thibault-23] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.159 [Thibault-24] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.159 [Thibault-24] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.159 [Thibault-22] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.159 [Thibault-22] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.160 [Thibault-21] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.160 [Thibault-21] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.160 [Thibault-20] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.161 [Thibault-20] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.161 [Thibault-19] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.161 [Thibault-19] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.161 [Thibault-18] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.161 [Thibault-18] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.161 [Thibault-17] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.161 [Thibault-17] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.161 [Thibault-16] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.162 [Thibault-16] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.162 [Thibault-14] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.162 [Thibault-14] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.162 [Thibault-15] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.162 [Thibault-15] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.162 [Thibault-13] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.162 [Thibault-13] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.163 [Thibault-11] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.163 [Thibault-11] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.163 [Thibault-10] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.163 [Thibault-10] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.163 [Thibault-12] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.163 [Thibault-12] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.163 [Thibault-9] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.163 [Thibault-9] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.163 [Thibault-8] INFO tourGuide.tracker.Tracker - Nombre de User dans la liste = 1
+18:44:10.163 [Thibault-8] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 1 users.
+18:44:10.230 [Thibault-56] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.236 [Thibault-42] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.237 [Thibault-81] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.237 [Thibault-9] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.240 [Thibault-43] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.241 [Thibault-11] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.336 [Thibault-54] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.346 [Thibault-93] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.364 [Thibault-73] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.367 [Thibault-77] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.371 [Thibault-7] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.371 [Thibault-19] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.371 [Thibault-60] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.373 [Thibault-70] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.373 [Thibault-86] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.373 [Thibault-44] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.374 [Thibault-90] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.375 [Thibault-27] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.376 [Thibault-5] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.380 [Thibault-46] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.384 [Thibault-49] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.406 [Thibault-16] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.408 [Thibault-67] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.418 [Thibault-75] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.420 [Thibault-48] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.436 [Thibault-95] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.439 [Thibault-78] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.440 [Thibault-50] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.448 [Thibault-57] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.454 [Thibault-29] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.455 [Thibault-76] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.456 [Thibault-34] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.461 [Thibault-25] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.471 [Thibault-40] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.476 [Thibault-13] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.484 [Thibault-28] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.486 [Thibault-14] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.520 [Thibault-41] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.529 [Thibault-3] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.531 [Thibault-79] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.539 [Thibault-23] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.543 [Thibault-32] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.568 [Thibault-80] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.572 [Thibault-52] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.595 [Thibault-88] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.601 [Thibault-10] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.602 [Thibault-35] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.607 [Thibault-37] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.622 [Thibault-94] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.625 [Thibault-83] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.627 [Thibault-92] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.643 [Thibault-87] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.658 [Thibault-99] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.665 [Thibault-98] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.669 [Thibault-58] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.690 [Thibault-89] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.702 [Thibault-38] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.761 [Thibault-17] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.761 [Thibault-82] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.765 [Thibault-97] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.767 [Thibault-6] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.794 [Thibault-18] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.803 [Thibault-45] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.808 [Thibault-0] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.810 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 1
+18:44:10.814 [Thibault-24] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.835 [Thibault-15] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.841 [Thibault-59] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.845 [Thibault-47] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.853 [Thibault-65] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.870 [Thibault-61] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.877 [Thibault-53] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.880 [Thibault-72] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.892 [Thibault-26] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.901 [Thibault-66] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.908 [Thibault-85] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.911 [Thibault-51] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.922 [Thibault-33] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.979 [Thibault-22] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.996 [Thibault-21] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:10.997 [Thibault-31] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.013 [Thibault-64] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.024 [Thibault-91] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.027 [Thibault-55] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.030 [Thibault-68] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.045 [Thibault-63] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.051 [Thibault-30] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.056 [Thibault-39] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.057 [Thibault-84] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.060 [Thibault-4] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.064 [Thibault-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 1 seconds.
+18:44:11.065 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 2
+18:44:11.077 [Thibault-20] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.079 [Thibault-2] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 1 seconds.
+18:44:11.079 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 3
+18:44:11.079 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 4
+18:44:11.079 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 5
+18:44:11.079 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 6
+18:44:11.079 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 7
+18:44:11.079 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 8
+18:44:11.107 [Thibault-12] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.124 [Thibault-8] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 9
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 10
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 11
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 12
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 13
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 14
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 15
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 16
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 17
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 18
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 19
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 20
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 21
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 22
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 23
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 24
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 25
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 26
+18:44:11.126 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 27
+18:44:11.127 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 28
+18:44:11.127 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 29
+18:44:11.127 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 30
+18:44:11.127 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 31
+18:44:11.127 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 32
+18:44:11.127 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 33
+18:44:11.127 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 34
+18:44:11.127 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 35
+18:44:11.127 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 36
+18:44:11.136 [Thibault-71] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.137 [Thibault-96] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.139 [Thibault-74] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.148 [Thibault-36] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 37
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 38
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 39
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 40
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 41
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 42
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 43
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 44
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 45
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 46
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 47
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 48
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 49
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 50
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 51
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 52
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 53
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 54
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 55
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 56
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 57
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 58
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 59
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 60
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 61
+18:44:11.149 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 62
+18:44:11.181 [Thibault-69] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 1 seconds.
+18:44:11.215 [Thibault-62] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 1 seconds.
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 63
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 64
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 65
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 66
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 67
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 68
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 69
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 70
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 71
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 72
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 73
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 74
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 75
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 76
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 77
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 78
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 79
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 80
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 81
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 82
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 83
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 84
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 85
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 86
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 87
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 88
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 89
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 90
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 91
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 92
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 93
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 94
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 95
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 96
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 97
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 98
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Attente fin thread 99
+18:44:11.216 [Test worker] DEBUG tourGuide.tracker.Tracker - Tracker stopping (0)
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - Nombre de UserTreatement passé à la moulinette 100
+18:44:11.216 [Test worker] INFO tourGuide.tracker.Tracker - highVolumeGetRewards: Time Elapsed: 1 seconds.
+]]></system-out>
+  <system-err><![CDATA[oct. 18, 2022 6:44:07 PM org.javamoney.moneta.DefaultMonetaryContextFactory createMonetaryContextNonNullConfig
+INFOS: Using custom MathContext: precision=256, roundingMode=HALF_EVEN
+]]></system-err>
+</testsuite>

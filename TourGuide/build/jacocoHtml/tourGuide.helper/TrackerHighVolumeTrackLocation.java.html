@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TrackerHighVolumeTrackLocation.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TourGuide</a> &gt; <a href="index.source.html" class="el_package">tourGuide.helper</a> &gt; <span class="el_source">TrackerHighVolumeTrackLocation.java</span></div><h1>TrackerHighVolumeTrackLocation.java</h1><pre class="source lang-java linenums">package tourGuide.helper;
+
+        import java.util.ArrayList;
+        import java.util.List;
+        import java.util.concurrent.ExecutorService;
+        import java.util.concurrent.Executors;
+        import java.util.concurrent.TimeUnit;
+
+        import lombok.Data;
+        import org.apache.commons.lang3.time.StopWatch;
+        import org.slf4j.Logger;
+        import org.slf4j.LoggerFactory;
+
+        import tourGuide.service.TourGuideService;
+        import tourGuide.tracker.Tracker;
+        import tourGuide.user.User;
+
+<span class="nc bnc" id="L18" title="All 34 branches missed.">@Data</span>
+public class TrackerHighVolumeTrackLocation extends Thread {
+<span class="pc" id="L20">    private final Logger logger = LoggerFactory.getLogger(Tracker.class);</span>
+<span class="nc" id="L21">    private final TourGuideService tourGuideService;</span>
+<span class="pc" id="L22">    private boolean stop = false;</span>
+<span class="fc" id="L23">    private List&lt;User&gt; userTreatement = new ArrayList&lt;&gt;();</span>
+
+    public void setUserTreatement(List&lt;User&gt; sublistUserTreatement) {
+<span class="fc" id="L26">        this.userTreatement.addAll(new ArrayList&lt;User&gt;(sublistUserTreatement));</span>
+<span class="fc" id="L27">    }</span>
+
+<span class="fc" id="L29">    public TrackerHighVolumeTrackLocation(TourGuideService tourGuideService) {</span>
+<span class="fc" id="L30">        this.tourGuideService = tourGuideService;</span>
+<span class="fc" id="L31">    }</span>
+
+    @Override
+    public void run() {
+<span class="fc" id="L35">        StopWatch stopWatch = new StopWatch();</span>
+<span class="fc" id="L36">        logger.info(&quot;Nombre de User dans la liste = &quot; +userTreatement.size());</span>
+        while(true) {
+<span class="pc bpc" id="L38" title="2 of 4 branches missed.">            if (Thread.currentThread().isInterrupted() || stop) {</span>
+<span class="nc" id="L39">                logger.debug(&quot;Tracker stopping (1)&quot;);</span>
+<span class="nc" id="L40">                break;</span>
+            }
+
+<span class="fc" id="L43">            logger.debug(&quot;Begin Tracker. Tracking &quot; + userTreatement.size() + &quot; users.&quot;);</span>
+<span class="fc" id="L44">            stopWatch.start();</span>
+<span class="fc" id="L45">            userTreatement.forEach(u -&gt; tourGuideService.trackUserLocation(u));</span>
+<span class="fc" id="L46">            stopWatch.stop();</span>
+<span class="fc" id="L47">            logger.debug(&quot;Tracker Time Elapsed: &quot; + TimeUnit.MILLISECONDS.toSeconds(stopWatch.getTime()) + &quot; seconds.&quot;);</span>
+<span class="fc" id="L48">            stopWatch.reset();</span>
+            break;
+        }
+<span class="fc" id="L51">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

@@ -43,7 +43,8 @@ public class TourGuideController {
     @RequestMapping("/getNearbyAttractions") 
     public String getNearbyAttractions(@RequestParam String userName) {
     	VisitedLocation visitedLocation = tourGuideService.getUserLocation(getUser(userName));
-    	return JsonStream.serialize(tourGuideService.getNearByAttractions(visitedLocation));
+
+        return JsonStream.serialize(tourGuideService.getNearByAttractions(visitedLocation));
     }
     
     @RequestMapping("/getRewards") 
@@ -73,8 +74,12 @@ public class TourGuideController {
     }
     
     private User getUser(String userName) {
-    	return tourGuideService.getUser(userName);
+        return tourGuideService.getUser(userName);
     }
-   
 
-}
+    @RequestMapping("/getUser")
+    public User getOneUser(@RequestParam String userName) {
+        return tourGuideService.getUser(userName);
+    }
+
+    }

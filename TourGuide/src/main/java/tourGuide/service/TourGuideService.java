@@ -1,35 +1,35 @@
 package tourGuide.service;
 
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.UUID;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Service;
-
+import com.jsoniter.output.JsonStream;
 import gpsUtil.GpsUtil;
 import gpsUtil.location.Attraction;
 import gpsUtil.location.Location;
 import gpsUtil.location.VisitedLocation;
+import org.javamoney.moneta.Money;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+import rewardCentral.RewardCentral;
+import tourGuide.JsonController.NearByAttractions;
 import tourGuide.helper.InternalTestHelper;
 import tourGuide.tracker.Tracker;
 import tourGuide.user.User;
+import tourGuide.user.UserPreferences;
 import tourGuide.user.UserReward;
 import tripPricer.Provider;
 import tripPricer.TripPricer;
 
+import javax.money.CurrencyUnit;
+import javax.money.Monetary;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 @Service
 public class TourGuideService {
-	private Logger logger = LoggerFactory.getLogger(TourGuideService.class);
+	private final Logger logger = LoggerFactory.getLogger(TourGuideService.class);
 	private final GpsUtil gpsUtil;
 	private final RewardsService rewardsService;
 	private final TripPricer tripPricer = new TripPricer();
@@ -46,8 +46,8 @@ public class TourGuideService {
 			initializeInternalUsers();
 			logger.debug("Finished initializing users");
 		}
-		tracker = new Tracker(this);
-		addShutDownHook();
+			tracker = new Tracker(this);
+			addShutDownHook();
 	}
 	
 	public List<UserReward> getUserRewards(User user) {
@@ -82,25 +82,54 @@ public class TourGuideService {
 		user.setTripDeals(providers);
 		return providers;
 	}
-	
+
+	//synchronized pour éviter le bug de concurrence quand je lance le test de performance de localisation
 	public VisitedLocation trackUserLocation(User user) {
+		Locale.setDefault(Locale.US);
 		VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
 		user.addToVisitedLocations(visitedLocation);
 		rewardsService.calculateRewards(user);
 		return visitedLocation;
 	}
 
-	public List<Attraction> getNearByAttractions(VisitedLocation visitedLocation) {
+	public List<NearByAttractions> getNearByAttractions(VisitedLocation visitedLocation) {
+		RewardCentral rewardCentral = new RewardCentral();
+		List<NearByAttractions> nearByAttractionsList = new ArrayList<NearByAttractions>();
 		List<Attraction> nearbyAttractions = new ArrayList<>();
+		TreeMap<Double, Attraction> sortedListByDistance = new TreeMap<>();
 		for(Attraction attraction : gpsUtil.getAttractions()) {
 			if(rewardsService.isWithinAttractionProximity(attraction, visitedLocation.location)) {
+				NearByAttractions nearByAttractions = new NearByAttractions();
+				nearByAttractions.setAttractionName(attraction.attractionName);
+				nearByAttractions.setDistanceInMiles(rewardsService.getDistance(attraction, visitedLocation.location));
+				nearByAttractions.setRewardsPoint(rewardCentral.getAttractionRewardPoints(attraction.attractionId, visitedLocation.userId));
+				nearByAttractions.setTouristAttractionLongitude(attraction.longitude);
+				nearByAttractions.setTouristAttractionLatitude(attraction.latitude);
+				nearByAttractions.setUserLongitude(visitedLocation.location.longitude);
+				nearByAttractions.setUserLatitude(visitedLocation.location.latitude);
+				nearByAttractionsList.add(nearByAttractions);
 				nearbyAttractions.add(attraction);
+			} else {
+				sortedListByDistance.put(rewardsService.getDistance(attraction ,visitedLocation.location), attraction);
 			}
 		}
-		
-		return nearbyAttractions;
+			while (nearbyAttractions.size() < 5){
+				Double distance = sortedListByDistance.firstKey();
+				nearbyAttractions.add(sortedListByDistance.get(distance));
+				NearByAttractions nearByAttractions = new NearByAttractions();
+				nearByAttractions.setAttractionName(sortedListByDistance.get(distance).attractionName);
+				nearByAttractions.setDistanceInMiles(rewardsService.getDistance(sortedListByDistance.get(distance), visitedLocation.location));
+				nearByAttractions.setRewardsPoint(rewardCentral.getAttractionRewardPoints(sortedListByDistance.get(distance).attractionId, visitedLocation.userId));
+				nearByAttractions.setTouristAttractionLongitude(sortedListByDistance.get(distance).longitude);
+				nearByAttractions.setTouristAttractionLatitude(sortedListByDistance.get(distance).latitude);
+				nearByAttractions.setUserLongitude(visitedLocation.location.longitude);
+				nearByAttractions.setUserLatitude(visitedLocation.location.latitude);
+				nearByAttractionsList.add(nearByAttractions);
+				sortedListByDistance.remove(distance);
+		}
+		return nearByAttractionsList;
 	}
-	
+
 	private void addShutDownHook() {
 		Runtime.getRuntime().addShutdownHook(new Thread() { 
 		      public void run() {
@@ -124,6 +153,8 @@ public class TourGuideService {
 			String email = userName + "@tourGuide.com";
 			User user = new User(UUID.randomUUID(), userName, phone, email);
 			generateUserLocationHistory(user);
+			generateUserPreference(user);
+
 			
 			internalUserMap.put(userName, user);
 		});
@@ -134,6 +165,20 @@ public class TourGuideService {
 		IntStream.range(0, 3).forEach(i-> {
 			user.addToVisitedLocations(new VisitedLocation(user.getUserId(), new Location(generateRandomLatitude(), generateRandomLongitude()), getRandomTime()));
 		});
+	}
+
+	private void generateUserPreference(User user){
+		CurrencyUnit currency = Monetary.getCurrency("USD");
+		UserPreferences userPreferences = new UserPreferences();
+
+		userPreferences.setAttractionProximity(new Random().nextInt(200)+1);
+		userPreferences.setTripDuration(new Random().nextInt(15)+1);
+		userPreferences.setTicketQuantity(new Random().nextInt(15)+1);
+		userPreferences.setNumberOfChildren(new Random().nextInt(6)+1);
+		userPreferences.setNumberOfAdults(new Random().nextInt(6)+1);
+		userPreferences.setLowerPricePoint(Money.of(0, currency));
+		userPreferences.setHighPricePoint(Money.of(new Random().nextInt(50000)+500, currency));
+		user.setUserPreferences(userPreferences);
 	}
 	
 	private double generateRandomLongitude() {
